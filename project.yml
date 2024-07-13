@@ -3,17 +3,9 @@ environment: {}
 packages:
     - name: warden-national-railway
       shared: false
-      environment: {}
-      parameters: {}
-      annotations: {}
       functions:
         - name: submit-order
           binary: false
           main: ""
           runtime: nodejs:default
           web: true
-          webSecure: false
-          parameters: {}
-          environment: {}
-          annotations: {}
-          limits: {}
