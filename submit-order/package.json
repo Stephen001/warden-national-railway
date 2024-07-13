@@ -1,0 +1,11 @@
+{
+  "name": "submit-order",
+  "version": "1.0.0",
+  "description": "Submits an order to the database",
+  "main": "submit-order.js",
+  "author": "Stephen Badger <stephen.badger@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "redis": "^4.6.15"
+  }
+}
