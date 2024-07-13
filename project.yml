@@ -1,11 +1,8 @@
-parameters: {}
-environment: {}
 packages:
     - name: warden-national-railway
       shared: false
       functions:
         - name: submit-order
           binary: false
-          main: ""
           runtime: nodejs:default
           web: true
