@@ -1,14 +1,13 @@
 var redis = require("redis");
 
-export function main(event) {
+async function main(event) {
     var client = redis.createClient(
         {
-            username: process.env.REDIS_USER,
-            password: process.env.REDIS_PASSWORD,
-            socket: {
-                host: process.env.REDIS_HOST,
-                port: process.env.REDIS_PORT
-            }
+            url: "rediss://:" + process.env.REDIS_USER + ":" + process.env.REDIS_PASSWORD + "@" + process.env.REDIS_HOST + ":" + process.env.REDIS_PORT
         }
     );
+    await client.connect();
+    return { body: 'Hello world' };
 };
+
+module.exports = main;
