@@ -1,7 +1,24 @@
-.nimbella
-.deployed
-__deployer__.zip
-__pycache__/
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
 node_modules
-package-lock.json
+
+# Logs
+logs
+*.log
+
+# Misc
 .DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
